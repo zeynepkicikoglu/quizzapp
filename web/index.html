@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Base Href -->
+    <base href="$FLUTTER_BASE_HREF" />
+
+    <meta charset="UTF-8" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta name="description" content="A new Flutter project." />
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="yarisma" />
+    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>yarisma</title>
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Service Worker Version -->
+    <script>
+      var serviceWorkerVersion = null;
+    </script>
+
+    <!-- Flutter Initialization JS -->
+    <script src="flutter.js" defer></script>
+
+    <!-- Firebase SDK Scripts -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBzVPcJoSocGyBtefs1Ggz6zESV2NLTlIY",
+        authDomain: "quiz-app-backend-563e4.firebaseapp.com",
+        projectId: "quiz-app-backend-563e4",
+        storageBucket: "quiz-app-backend-563e4.appspot.com",
+        messagingSenderId: "257377086424",
+        appId: "1:257377086424:web:368cbfcd424630cc5960ad",
+        measurementId: "G-06T03B7NY0",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </head>
+  <body>
+    <!-- Flutter Application Loader -->
+    <script>
+      window.addEventListener("load", function (ev) {
+        _flutter.loader
+          .loadEntrypoint({
+            serviceWorker: {
+              serviceWorkerVersion: serviceWorkerVersion,
+            },
+          })
+          .then(function (engineInitializer) {
+            return engineInitializer.initializeEngine();
+          })
+          .then(function (appRunner) {
+            return appRunner.runApp();
+          });
+      });
+    </script>
+  </body>
+</html>
