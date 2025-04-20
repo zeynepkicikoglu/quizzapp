@@ -1,0 +1,57 @@
+# Dart & Flutter
+.dart_tool/
+build/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Android
+android/.gradle/
+android/app/*.keystore
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Flutter.podspec
+
+# VS Code
+.vscode/
+
+# Android Studio
+.idea/
+*.iml
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+**/DerivedData/
+
+# Diğer
+.DS_Store
+# Dart & Flutter
+.dart_tool/
+build/
+pubspec.lock
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Android
+android/.gradle/
+android/app/*.keystore
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+
+# IDE klasörleri
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Xcode DerivedData
+**/DerivedData/
+
